@@ -1,0 +1,15 @@
+app:
+  name: poi-backend-app
+  namespace: skraft-redhat
+  cluster: .apps.summit23-dr.w6gk.p1.openshiftapps.com
+
+git:
+  branch: main
+  repo: https://github.com/Summit23DevRHEL/skraft-redhat-new-backend
+  org: Summit23DevRHEL
+  name: skraft-redhat-new-backend
+
+image:
+  host: image-registry.openshift-image-registry.svc:5000
+  name: skraft-redhat/poi-backend-app
+  tag: latest
